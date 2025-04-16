@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>b3eae6b0-1234-4f7a-bbbb-123456789abc</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Ahmad Fahmi</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="GEOtExcel Commands"/>
+  <Description DefaultValue="Enhanced cell controls for GEOtExcel"/>
+  <IconUrl DefaultValue="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png"/>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings/>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host Name="Workbook">
+        <DesktopFormFactor>
+          <GetStarted Title="Use GEOtExcel" Description="Launch enhanced cell editing tools" LearnMoreUrl="https://geotexcel.ir"/>
+          <FunctionFile>https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</FunctionFile>
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <CustomTab id="GEOtExcelTab">
+              <Group id="GEOtExcelGroup">
+                <Label resid="groupLabel"/>
+                <Controls>
+                  <Button id="btn+0p1" label="+0.1" icon="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png">
+                    <Action xsi:type="ShowTaskpane">https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</Action>
+                  </Button>
+                  <Button id="btn+1" label="+1" icon="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png">
+                    <Action xsi:type="ShowTaskpane">https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</Action>
+                  </Button>
+                  <Button id="btn+10" label="+10" icon="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png">
+                    <Action xsi:type="ShowTaskpane">https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</Action>
+                  </Button>
+                  <Button id="btn+100" label="+100" icon="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png">
+                    <Action xsi:type="ShowTaskpane">https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</Action>
+                  </Button>
+                  <Button id="btnminus0p1" label="-0.1" icon="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png">
+                    <Action xsi:type="ShowTaskpane">https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</Action>
+                  </Button>
+                  <Button id="btnminus1" label="-1" icon="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png">
+                    <Action xsi:type="ShowTaskpane">https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</Action>
+                  </Button>
+                  <Button id="btnminus10" label="-10" icon="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png">
+                    <Action xsi:type="ShowTaskpane">https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</Action>
+                  </Button>
+                  <Button id="btnminus100" label="-100" icon="https://ahmadfahmi1359.github.io/excel-commands/assets/icon-32.png">
+                    <Action xsi:type="ShowTaskpane">https://ahmadfahmi1359.github.io/excel-commands/taskpane.html</Action>
+                  </Button>
+                </Controls>
+              </Group>
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+  </VersionOverrides>
+</OfficeApp>
